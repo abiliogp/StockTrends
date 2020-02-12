@@ -13,8 +13,8 @@
 		E0C4A4AA23F411910088C9EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C4A4A923F411910088C9EC /* Assets.xcassets */; };
 		E0C4A4AD23F411910088C9EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C4A4AC23F411910088C9EC /* Preview Assets.xcassets */; };
 		E0C4A4B023F411910088C9EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C4A4AE23F411910088C9EC /* LaunchScreen.storyboard */; };
-		E0C4A4BB23F411920088C9EC /* Stock_TrendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A4BA23F411920088C9EC /* Stock_TrendsTests.swift */; };
-		E0C4A4C623F411920088C9EC /* Stock_TrendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A4C523F411920088C9EC /* Stock_TrendsUITests.swift */; };
+		E0C4A4BB23F411920088C9EC /* StockTrendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A4BA23F411920088C9EC /* StockTrendsTests.swift */; };
+		E0C4A4C623F411920088C9EC /* StockTrendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A4C523F411920088C9EC /* StockTrendsUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +44,10 @@
 		E0C4A4AF23F411910088C9EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0C4A4B123F411910088C9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0C4A4B623F411920088C9EC /* Stock TrendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stock TrendsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0C4A4BA23F411920088C9EC /* Stock_TrendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock_TrendsTests.swift; sourceTree = "<group>"; };
+		E0C4A4BA23F411920088C9EC /* StockTrendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTrendsTests.swift; sourceTree = "<group>"; };
 		E0C4A4BC23F411920088C9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0C4A4C123F411920088C9EC /* Stock TrendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stock TrendsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0C4A4C523F411920088C9EC /* Stock_TrendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock_TrendsUITests.swift; sourceTree = "<group>"; };
+		E0C4A4C523F411920088C9EC /* StockTrendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTrendsUITests.swift; sourceTree = "<group>"; };
 		E0C4A4C723F411920088C9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,7 +121,7 @@
 		E0C4A4B923F411920088C9EC /* Stock TrendsTests */ = {
 			isa = PBXGroup;
 			children = (
-				E0C4A4BA23F411920088C9EC /* Stock_TrendsTests.swift */,
+				E0C4A4BA23F411920088C9EC /* StockTrendsTests.swift */,
 				E0C4A4BC23F411920088C9EC /* Info.plist */,
 			);
 			path = "Stock TrendsTests";
@@ -130,7 +130,7 @@
 		E0C4A4C423F411920088C9EC /* Stock TrendsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E0C4A4C523F411920088C9EC /* Stock_TrendsUITests.swift */,
+				E0C4A4C523F411920088C9EC /* StockTrendsUITests.swift */,
 				E0C4A4C723F411920088C9EC /* Info.plist */,
 			);
 			path = "Stock TrendsUITests";
@@ -298,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0C4A4BB23F411920088C9EC /* Stock_TrendsTests.swift in Sources */,
+				E0C4A4BB23F411920088C9EC /* StockTrendsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0C4A4C623F411920088C9EC /* Stock_TrendsUITests.swift in Sources */,
+				E0C4A4C623F411920088C9EC /* StockTrendsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
