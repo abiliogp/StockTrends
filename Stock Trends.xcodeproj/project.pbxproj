@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E08363FF23F43EA8000DCEA8 /* MostLoserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08363FE23F43EA8000DCEA8 /* MostLoserList.swift */; };
 		E083640123F4422D000DCEA8 /* ReadJsonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E083640023F4422D000DCEA8 /* ReadJsonTest.swift */; };
+		E083640323F44663000DCEA8 /* ServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E083640223F44663000DCEA8 /* ServiceTest.swift */; };
 		E0C4A4A423F4118D0088C9EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A4A323F4118D0088C9EC /* AppDelegate.swift */; };
 		E0C4A4A623F4118D0088C9EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A4A523F4118D0088C9EC /* SceneDelegate.swift */; };
 		E0C4A4A823F4118D0088C9EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A4A723F4118D0088C9EC /* ContentView.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		E08363FE23F43EA8000DCEA8 /* MostLoserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostLoserList.swift; sourceTree = "<group>"; };
 		E083640023F4422D000DCEA8 /* ReadJsonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJsonTest.swift; sourceTree = "<group>"; };
+		E083640223F44663000DCEA8 /* ServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTest.swift; sourceTree = "<group>"; };
 		E0C4A4A023F4118D0088C9EC /* Stock Trends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Trends.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C4A4A323F4118D0088C9EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0C4A4A523F4118D0088C9EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				E0C4A4BC23F411920088C9EC /* Info.plist */,
 				E0C4A4D623F421660088C9EC /* gainer.json */,
 				E0C4A4D823F422550088C9EC /* losers.json */,
+				E083640223F44663000DCEA8 /* ServiceTest.swift */,
 			);
 			path = "Stock TrendsTests";
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			files = (
 				E0C4A4BB23F411920088C9EC /* StockTrendsTests.swift in Sources */,
 				E083640123F4422D000DCEA8 /* ReadJsonTest.swift in Sources */,
+				E083640323F44663000DCEA8 /* ServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
