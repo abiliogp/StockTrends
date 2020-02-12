@@ -10,7 +10,7 @@
 
 ## References
 
-DOC API.: https://financialmodelingprep.com/api
+DOC API.: https://financialmodelingprep.com/
 
 ---
 
