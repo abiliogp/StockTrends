@@ -7,11 +7,14 @@
 //
 
 import XCTest
+@testable import Stock_Trends
 
 class StockListViewModelTest: XCTestCase {
 
-    func testShouldShowMostGainerWhenFetch() {
+    var viewModel = StockListViewModel()
 
+    func testShouldShowMostGainerWhenFetch() {
+        viewModel.setupController()
     }
 
     func testShouldShowMostLoserWhenFetch() {

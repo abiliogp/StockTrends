@@ -34,7 +34,7 @@ extension Service: ServiceProtocol {
     }
 
     func fetchLoserList(completionHandler: @escaping (Result<MostLoserList, ServiceError>) -> Void) {
-        fetch(from:  Environment.endpointLosers) { (result) in
+        fetch(from: Environment.endpointLosers) { (result) in
             completionHandler(result)
         }
     }
