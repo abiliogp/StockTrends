@@ -1,0 +1,63 @@
+{
+    "mostLoserStock" : [ {
+        "ticker" : "CIVBP",
+        "changes" : -23.7679,
+        "price" : "25.4121",
+        "changesPercentage" : "(-48.33%)",
+        "companyName" : "Civista Bancshares Inc. Depositary Shares Each Representing a 1/40th Interest in a 6.50% Noncumulative Redeemable Convertible Perpetual Preferred Share Series B"
+    }, {
+        "ticker" : "COBH.BR",
+        "changes" : -20.0,
+        "price" : "3680",
+        "changesPercentage" : "(-0.54%)",
+        "companyName" : "Brouwerij Handelsmaatschappij NV"
+    }, {
+        "ticker" : "MLM",
+        "changes" : -14.03,
+        "price" : "262.76",
+        "changesPercentage" : "(-5.07%)",
+        "companyName" : "Martin Marietta Materials Inc."
+    }, {
+        "ticker" : "EPCP.PA",
+        "changes" : -14.0,
+        "price" : "795",
+        "changesPercentage" : "(-1.73%)",
+        "companyName" : "EPC Groupe"
+    }, {
+        "ticker" : "EEFT",
+        "changes" : -12.79,
+        "price" : "145.14",
+        "changesPercentage" : "(-8.10%)",
+        "companyName" : "Euronet Worldwide Inc."
+    }, {
+        "ticker" : "TAPR",
+        "changes" : -12.6616,
+        "price" : "10.9384",
+        "changesPercentage" : "(-53.65%)",
+        "companyName" : "Barclays Inverse US Treasury Composite ETN"
+    }, {
+        "ticker" : "LOTB.BR",
+        "changes" : -10.0,
+        "price" : "2980",
+        "changesPercentage" : "(-0.33%)",
+        "companyName" : "Lotus Bakeries NV"
+    }, {
+        "ticker" : "CABO",
+        "changes" : -8.33,
+        "price" : "1754.48",
+        "changesPercentage" : "(-0.47%)",
+        "companyName" : "Cable One Inc."
+    }, {
+        "ticker" : "FICO",
+        "changes" : -7.97,
+        "price" : "411.75",
+        "changesPercentage" : "(-1.90%)",
+        "companyName" : "Fair Isaac Corproation"
+    }, {
+        "ticker" : "JLL",
+        "changes" : -7.33,
+        "price" : "165.17",
+        "changesPercentage" : "(-4.25%)",
+        "companyName" : "Jones Lang LaSalle Incorporated"
+    } ]
+}
