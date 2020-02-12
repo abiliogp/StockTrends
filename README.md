@@ -2,6 +2,6 @@
 ![platforms](https://img.shields.io/badge/platforms-iPhone-lightgrey)
 ![Build Status](https://travis-ci.com/abiliogp/StockTrends.svg?branch=master)
 [![codecov](https://codecov.io/gh/abiliogp/StockTrends/branch/master/graph/badge.svg)](https://codecov.io/gh/abiliogp/StockTrends)
-[![codebeat badge](https://codebeat.co/badges/42253b0f-ecf4-4685-a402-ca2547e82167)](https://codebeat.co/projects/github-com-abiliogp-breakingbadmvvm-master)
+[![codebeat badge](https://codebeat.co/badges/5cce79fc-3252-4bbe-b233-e8550aa1e7c3)](https://codebeat.co/projects/github-com-abiliogp-stocktrends-master)
 
 # StockTrends
