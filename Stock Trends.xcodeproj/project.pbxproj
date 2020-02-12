@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E02D512623F454A100055CAD /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D512523F454A100055CAD /* Environment.swift */; };
 		E02D512923F454E700055CAD /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D512823F454E700055CAD /* Keys.swift */; };
+		E02D512C23F45D4E00055CAD /* StockListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D512B23F45D4E00055CAD /* StockListViewModelTest.swift */; };
 		E08363FF23F43EA8000DCEA8 /* MostLoserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08363FE23F43EA8000DCEA8 /* MostLoserList.swift */; };
 		E083640123F4422D000DCEA8 /* ReadJsonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E083640023F4422D000DCEA8 /* ReadJsonTest.swift */; };
 		E083640323F44663000DCEA8 /* ServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E083640223F44663000DCEA8 /* ServiceTest.swift */; };
@@ -48,6 +49,7 @@
 		E02D512523F454A100055CAD /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		E02D512823F454E700055CAD /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		E02D512A23F455D100055CAD /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		E02D512B23F45D4E00055CAD /* StockListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModelTest.swift; sourceTree = "<group>"; };
 		E08363FE23F43EA8000DCEA8 /* MostLoserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostLoserList.swift; sourceTree = "<group>"; };
 		E083640023F4422D000DCEA8 /* ReadJsonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJsonTest.swift; sourceTree = "<group>"; };
 		E083640223F44663000DCEA8 /* ServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTest.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				E0C4A4D823F422550088C9EC /* losers.json */,
 				E083640223F44663000DCEA8 /* ServiceTest.swift */,
 				E083640023F4422D000DCEA8 /* ReadJsonTest.swift */,
+				E02D512B23F45D4E00055CAD /* StockListViewModelTest.swift */,
 			);
 			path = "Stock TrendsTests";
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				E0C4A4BB23F411920088C9EC /* StockTrendsTests.swift in Sources */,
 				E083640123F4422D000DCEA8 /* ReadJsonTest.swift in Sources */,
 				E083640323F44663000DCEA8 /* ServiceTest.swift in Sources */,
+				E02D512C23F45D4E00055CAD /* StockListViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
