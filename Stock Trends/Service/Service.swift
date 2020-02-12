@@ -28,22 +28,16 @@ struct Service {
 
 extension Service: ServiceProtocol {
     func fetchGainerList(completionHandler: @escaping (Result<MostGainerList, ServiceError>) -> Void) {
-        let url = "https://financialmodelingprep.com/api/v3/stock/gainers"
-
-        fetch(from: url) { (result) in
+        fetch(from: Environment.endpointGainers) { (result) in
             completionHandler(result)
         }
-
     }
 
     func fetchLoserList(completionHandler: @escaping (Result<MostLoserList, ServiceError>) -> Void) {
-        let url = "https://financialmodelingprep.com/api/v3/stock/losers"
-
-        fetch(from: url) { (result) in
+        fetch(from:  Environment.endpointLosers) { (result) in
             completionHandler(result)
         }
     }
-
 }
 
 extension Service {

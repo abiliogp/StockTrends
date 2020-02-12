@@ -1,0 +1,14 @@
+//
+//  Config.xcconfig
+//  Stock Trends
+//
+//  Created by Abilio Gambim Parada on 12/02/2020.
+//  Copyright © 2020 Abilio Gambim Parada. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+ENDPOINT_GAINERS = https:/$()/financialmodelingprep.com/api/v3/stock/gainers
+
+ENDPOINT_LOSERS = https:/$()/financialmodelingprep.com/api/v3/stock/losers

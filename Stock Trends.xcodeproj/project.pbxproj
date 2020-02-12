@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E02D512623F454A100055CAD /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D512523F454A100055CAD /* Environment.swift */; };
+		E02D512923F454E700055CAD /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D512823F454E700055CAD /* Keys.swift */; };
 		E08363FF23F43EA8000DCEA8 /* MostLoserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08363FE23F43EA8000DCEA8 /* MostLoserList.swift */; };
 		E083640123F4422D000DCEA8 /* ReadJsonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E083640023F4422D000DCEA8 /* ReadJsonTest.swift */; };
 		E083640323F44663000DCEA8 /* ServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E083640223F44663000DCEA8 /* ServiceTest.swift */; };
@@ -43,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E02D512523F454A100055CAD /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		E02D512823F454E700055CAD /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		E02D512A23F455D100055CAD /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		E08363FE23F43EA8000DCEA8 /* MostLoserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostLoserList.swift; sourceTree = "<group>"; };
 		E083640023F4422D000DCEA8 /* ReadJsonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJsonTest.swift; sourceTree = "<group>"; };
 		E083640223F44663000DCEA8 /* ServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTest.swift; sourceTree = "<group>"; };
@@ -92,6 +97,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E02D512723F454A800055CAD /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E02D512523F454A100055CAD /* Environment.swift */,
+				E02D512823F454E700055CAD /* Keys.swift */,
+				E02D512A23F455D100055CAD /* Config.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		E083640623F4497F000DCEA8 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +145,7 @@
 				E0C4A4AE23F411910088C9EC /* LaunchScreen.storyboard */,
 				E0C4A4B123F411910088C9EC /* Info.plist */,
 				E0C4A4AB23F411910088C9EC /* Preview Content */,
+				E02D512723F454A800055CAD /* Config */,
 				E0C4A4DE23F425410088C9EC /* Model */,
 				E083640623F4497F000DCEA8 /* Service */,
 			);
@@ -331,11 +347,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0C4A4A423F4118D0088C9EC /* AppDelegate.swift in Sources */,
+				E02D512623F454A100055CAD /* Environment.swift in Sources */,
 				E083640523F44978000DCEA8 /* Service.swift in Sources */,
 				E0C4A4A623F4118D0088C9EC /* SceneDelegate.swift in Sources */,
 				E0C4A4DB23F425250088C9EC /* MostGainerList.swift in Sources */,
 				E0C4A4DD23F425340088C9EC /* Stock.swift in Sources */,
 				E08363FF23F43EA8000DCEA8 /* MostLoserList.swift in Sources */,
+				E02D512923F454E700055CAD /* Keys.swift in Sources */,
 				E0C4A4A823F4118D0088C9EC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +405,7 @@
 /* Begin XCBuildConfiguration section */
 		E0C4A4C823F411920088C9EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02D512A23F455D100055CAD /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -447,6 +466,7 @@
 		};
 		E0C4A4C923F411920088C9EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02D512A23F455D100055CAD /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -501,6 +521,7 @@
 		};
 		E0C4A4CB23F411920088C9EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02D512A23F455D100055CAD /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -520,6 +541,7 @@
 		};
 		E0C4A4CC23F411920088C9EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02D512A23F455D100055CAD /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +561,7 @@
 		};
 		E0C4A4CE23F411920088C9EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02D512A23F455D100055CAD /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -560,6 +583,7 @@
 		};
 		E0C4A4CF23F411920088C9EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02D512A23F455D100055CAD /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -581,6 +605,7 @@
 		};
 		E0C4A4D123F411920088C9EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02D512A23F455D100055CAD /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -600,6 +625,7 @@
 		};
 		E0C4A4D223F411920088C9EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02D512A23F455D100055CAD /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
