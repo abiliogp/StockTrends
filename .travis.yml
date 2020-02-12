@@ -1,0 +1,9 @@
+language: swift
+osx_image: xcode11.3
+install:
+  - ./install_lint.sh
+script:
+  - xcodebuild -scheme Stock\ Trends -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3' clean build test
+  - swiftlint
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -J Stock\ Trends -v
