@@ -1,0 +1,63 @@
+{
+    "mostGainerStock" : [ {
+        "ticker" : "NVR",
+        "changes" : 29.65,
+        "price" : "3981.86",
+        "changesPercentage" : "(+0.75%)",
+        "companyName" : "NVR Inc."
+    }, {
+        "ticker" : "SAM",
+        "changes" : 25.83,
+        "price" : "399.69",
+        "changesPercentage" : "(+6.91%)",
+        "companyName" : "Boston Beer Company Inc. (The)"
+    }, {
+        "ticker" : "BKNG",
+        "changes" : 22.66,
+        "price" : "1909.3",
+        "changesPercentage" : "(+1.20%)",
+        "companyName" : "Booking Holdings Inc."
+    }, {
+        "ticker" : "BNB.BR",
+        "changes" : 20.0,
+        "price" : "2400",
+        "changesPercentage" : "(+0.84%)",
+        "companyName" : "Banque nationale de Belgique Societe anonyme"
+    }, {
+        "ticker" : "SBAC",
+        "changes" : 19.26,
+        "price" : "284",
+        "changesPercentage" : "(+7.28%)",
+        "companyName" : "SBA Communications Corporation"
+    }, {
+        "ticker" : "BH-A",
+        "changes" : 18.9,
+        "price" : "670",
+        "changesPercentage" : "(+2.90%)",
+        "companyName" : "Biglari Holdings Inc."
+    }, {
+        "ticker" : "ARRY",
+        "changes" : 17.69,
+        "price" : "46.57",
+        "changesPercentage" : "(+61.25%)",
+        "companyName" : "Array BioPharma Inc."
+    }, {
+        "ticker" : "AMZN",
+        "changes" : 16.89,
+        "price" : "2150.8",
+        "changesPercentage" : "(+0.79%)",
+        "companyName" : "Amazon.com Inc."
+    }, {
+        "ticker" : "LFIN",
+        "changes" : 16.38,
+        "price" : "17.46",
+        "changesPercentage" : "(+48.40%)",
+        "companyName" : "LongFin Corp"
+    }, {
+        "ticker" : "RBT.PA",
+        "changes" : 16.0,
+        "price" : "1036",
+        "changesPercentage" : "(+1.57%)",
+        "companyName" : "Robertet SA"
+    } ]
+}

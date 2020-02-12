@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/abiliogp/Developer/Stock Trends/Stock TrendsTests/ConvertDtoTest.swift">
+   </FileRef>
+   <FileRef
       location = "self:Stock Trends.xcodeproj">
    </FileRef>
 </Workspace>
