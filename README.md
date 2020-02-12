@@ -5,3 +5,13 @@
 [![codebeat badge](https://codebeat.co/badges/5cce79fc-3252-4bbe-b233-e8550aa1e7c3)](https://codebeat.co/projects/github-com-abiliogp-stocktrends-master)
 
 # StockTrends
+
+
+
+## References
+
+DOC API.: https://financialmodelingprep.com/api
+
+---
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-abiliogp-blue)](https://www.linkedin.com/in/abilio-parada-464b247a/)
