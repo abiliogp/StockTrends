@@ -21,7 +21,32 @@ class StockListViewModel: ObservableObject {
 }
 
 extension StockListViewModel {
+
     func setupController() {
         self.loading = true
+    }
+
+    func loadGainers() {
+        self.loading = true
+        self.service.fetchGainerList { [weak self] (result) in
+            self?.loading = false
+            switch result {
+            case .success(let stocks):
+                self?.listStock = stocks.mostGainerStock
+            case .failure(let error):
+                break
+            }
+        }
+    }
+
+    func loadLosers() {
+        self.service.fetchLoserList { [weak self] (result) in
+            switch result {
+            case .success(let stocks):
+                self?.listStock = stocks.mostLoserStock
+            case .failure(let error):
+                break
+            }
+        }
     }
 }

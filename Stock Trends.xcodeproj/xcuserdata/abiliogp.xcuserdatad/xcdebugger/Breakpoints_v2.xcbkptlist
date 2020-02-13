@@ -23,16 +23,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D1486A7C-7F3A-4D25-9BC5-4E51D3F9A50A"
-            shouldBeEnabled = "No"
+            uuid = "A79C01D4-057B-49B9-B364-7C2C19874CBA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stock TrendsTests/StockListViewModelTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "testShouldShowMostLoserWhenFetch()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9CAC262E-31CF-4D3A-B77D-FE026E4245F1"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Stock Trends/ViewModel/StockListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "setupController()"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "loadGainers()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
