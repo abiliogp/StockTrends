@@ -23,8 +23,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "89720BC5-255B-41FD-B45B-472B9556A2CC"
-            shouldBeEnabled = "Yes"
+            uuid = "D1486A7C-7F3A-4D25-9BC5-4E51D3F9A50A"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Stock Trends/ViewModel/StockListViewModel.swift"
