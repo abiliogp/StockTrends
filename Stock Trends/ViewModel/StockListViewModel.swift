@@ -40,7 +40,9 @@ extension StockListViewModel {
     }
 
     func loadLosers() {
+        self.loading = true
         self.service.fetchLoserList { [weak self] (result) in
+            self?.loading = false
             switch result {
             case .success(let stocks):
                 self?.listStock = stocks.mostLoserStock

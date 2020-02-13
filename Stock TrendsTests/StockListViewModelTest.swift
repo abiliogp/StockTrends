@@ -38,9 +38,10 @@ class StockListViewModelTest: XCTestCase {
         XCTAssertEqual(loadingsSignal.count, 2)
     }
 
-    func testShouldShowMostLoserWhenFetch() {
+    func testShouldShowMostGainerWhenFetch() {
         //Given
-        let viewModel = StockListViewModel()
+        let service = MockService()
+        let viewModel = StockListViewModel(service: service)
 
         let expectLoad = XCTestExpectation()
         expectLoad.expectedFulfillmentCount = 4
@@ -87,7 +88,53 @@ class StockListViewModelTest: XCTestCase {
         XCTAssertEqual(stockList.count, 2)
     }
 
-    func testShouldShowErrorWhenError() {
+    func testShouldShowMostLoserWhenFetch() {
+        //Given
+        let service = MockService()
+        let viewModel = StockListViewModel(service: service)
 
+        let expectLoad = XCTestExpectation()
+        expectLoad.expectedFulfillmentCount = 4
+
+        let expectStockList = XCTestExpectation()
+        expectStockList.expectedFulfillmentCount = 2
+
+        var loadingsSignal = [Bool]()
+        var stockList = [[Stock]]()
+
+        let sinkLoad = Subscribers.Sink<Bool, Never>(
+            receiveCompletion: { _ in },
+            receiveValue: {
+                loadingsSignal.append($0)
+                expectLoad.fulfill()
+        })
+
+        let sinkStockList = Subscribers.Sink<[Stock], Never>(
+            receiveCompletion: { _ in },
+            receiveValue: {
+                stockList.append($0)
+                expectStockList.fulfill()
+        })
+
+        viewModel.$loading.subscribe(sinkLoad)
+        viewModel.$listStock.subscribe(sinkStockList)
+
+        //When
+        viewModel.setupController()
+        viewModel.loadLosers()
+
+        wait(for: [expectLoad, expectStockList], timeout: 5.0)
+
+        //Assert
+        XCTAssertFalse(loadingsSignal[0])
+        XCTAssertTrue(loadingsSignal[1])
+        XCTAssertTrue(loadingsSignal[2])
+        XCTAssertFalse(loadingsSignal[3])
+
+        XCTAssertEqual(loadingsSignal.count, 4)
+
+        XCTAssertEqual(stockList.first?.count, 0)
+        XCTAssertEqual(stockList.last?.count, 10)
+        XCTAssertEqual(stockList.count, 2)
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E005899623F5B144002CEF89 /* ReadJsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005899523F5B144002CEF89 /* ReadJsonUtils.swift */; };
+		E01849F723F5B50B00B0E604 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01849F623F5B50B00B0E604 /* MockService.swift */; };
 		E02D512623F454A100055CAD /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D512523F454A100055CAD /* Environment.swift */; };
 		E02D512923F454E700055CAD /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D512823F454E700055CAD /* Keys.swift */; };
 		E02D512C23F45D4E00055CAD /* StockListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D512B23F45D4E00055CAD /* StockListViewModelTest.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E005899523F5B144002CEF89 /* ReadJsonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJsonUtils.swift; sourceTree = "<group>"; };
+		E01849F623F5B50B00B0E604 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
 		E02D512523F454A100055CAD /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		E02D512823F454E700055CAD /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		E02D512A23F455D100055CAD /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 				E083640223F44663000DCEA8 /* ServiceTest.swift */,
 				E083640023F4422D000DCEA8 /* ReadJsonTest.swift */,
 				E02D512B23F45D4E00055CAD /* StockListViewModelTest.swift */,
+				E005899523F5B144002CEF89 /* ReadJsonUtils.swift */,
+				E01849F623F5B50B00B0E604 /* MockService.swift */,
 			);
 			path = "Stock TrendsTests";
 			sourceTree = "<group>";
@@ -387,8 +393,10 @@
 			files = (
 				E0C4A4BB23F411920088C9EC /* StockTrendsTests.swift in Sources */,
 				E083640123F4422D000DCEA8 /* ReadJsonTest.swift in Sources */,
+				E005899623F5B144002CEF89 /* ReadJsonUtils.swift in Sources */,
 				E083640323F44663000DCEA8 /* ServiceTest.swift in Sources */,
 				E02D512C23F45D4E00055CAD /* StockListViewModelTest.swift in Sources */,
+				E01849F723F5B50B00B0E604 /* MockService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
