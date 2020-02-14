@@ -12,6 +12,19 @@
 </p>
 
 
+## Goals
+* SwiftUI
+
+* MVVM
+
+* No External Libs
+
+* Base URL stored xcconfig
+
+* Unit test for MVVM
+
+* Unit test for ApiService
+
 ## References
 
 DOC API.: https://financialmodelingprep.com/
