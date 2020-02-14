@@ -12,6 +12,9 @@ struct ContentView: View {
 
     @ObservedObject var viewModel = StockListViewModel()
 
+    @State private var isGainer = true
+
+
     init() {
         viewModel.setupController()
         viewModel.loadGainers()
@@ -41,9 +44,21 @@ struct ContentView: View {
             .navigationBarItems(trailing:
                 HStack {
                     Button(action: {
-                        self.viewModel.loadLosers()
+                        if self.isGainer{
+                            self.viewModel.loadLosers()
+                        } else{
+                            self.viewModel.loadGainers()
+                        }
+                        self.isGainer.toggle()
+
                     }){
-                         Text("Losers")
+                        Group{
+                            if isGainer{
+                                Image("arrow.down.circle.fill")
+                            } else{
+                                Image("arrow.up.circle.fill")
+                            }
+                        }
                     }
                 }
             )
