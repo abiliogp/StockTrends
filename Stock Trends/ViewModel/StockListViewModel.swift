@@ -29,13 +29,16 @@ extension StockListViewModel {
     func loadGainers() {
         self.loading = true
         self.service.fetchGainerList { [weak self] (result) in
-            self?.loading = false
-            switch result {
-            case .success(let stocks):
-                self?.listStock = stocks.mostGainerStock
-            case .failure(let error):
-                break
+            DispatchQueue.main.async {
+                self?.loading = false
+                switch result {
+                    case .success(let stocks):
+                        self?.listStock = stocks.mostGainerStock
+                    case .failure(let error):
+                        break
+                }
             }
+
         }
     }
 

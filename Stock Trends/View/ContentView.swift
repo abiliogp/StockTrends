@@ -9,8 +9,45 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @ObservedObject var viewModel = StockListViewModel()
+
+    init() {
+        viewModel.setupController()
+        viewModel.loadGainers()
+    }
+
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            Group {
+                if viewModel.loading {
+                    ActivityIndicator()
+                } else {
+                    List {
+                        ForEach(viewModel.listStock) { stockItem in
+                            StockCellView(
+                                ticker: stockItem.ticker,
+                                companyName: stockItem.companyName,
+                                price: stockItem.price,
+                                change: stockItem.changes,
+                                changesPercentage:
+                                stockItem.changesPercentage)
+                        }
+                    }
+                }
+            }
+            .navigationBarTitle("Stock")
+            .navigationBarItems(trailing:
+                HStack {
+                    Button(action: {
+                        self.viewModel.loadLosers()
+                    }) {
+                         Text("Losers")
+                    }
+                }
+            )
+        }
+
     }
 }
 

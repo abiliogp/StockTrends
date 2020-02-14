@@ -13,7 +13,7 @@ struct StockCellView: View {
     var ticker: String
     var companyName: String
 
-    var price: Double
+    var price: String
     var change: Double
     var changesPercentage: String
 
@@ -37,7 +37,7 @@ struct StockCellView: View {
                 ChangeView(change: change,
                            changePercentage: changesPercentage)
 
-                PriceView(price: price)
+                PriceView(price: (price as NSString).doubleValue)
 
             }
         }.aspectRatio(contentMode: .fill)
@@ -138,7 +138,7 @@ struct StockCellView_Previews: PreviewProvider {
         StockCellView(
             ticker: "SAM",
             companyName: "Boston Beer Company Inc. (The)",
-            price: 399.69,
+            price: "399.69",
             change: 25.83,
             changesPercentage: "(+6.91%)")
     }

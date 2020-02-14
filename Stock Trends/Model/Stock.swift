@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct Stock: Codable {
+struct Stock: Codable, Identifiable {
+    var id = UUID()
     var ticker: String
     var changes: Double
     var price: String
