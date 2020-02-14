@@ -7,7 +7,7 @@
 # StockTrends
 
 <p align="center">
-  <img src="https://github.com/abiliogp/imagens/blob/master/stock-up-swiftui.png" width="200px"/>
+  <img src="https://github.com/abiliogp/imagens/blob/master/stock-up-swiftui.png" width="193px"/>
   <img src="https://github.com/abiliogp/imagens/blob/master/stock-down-swiftui.png" width="200px"/>
 </p>
 
