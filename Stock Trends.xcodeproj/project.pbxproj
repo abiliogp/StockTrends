@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E005899623F5B144002CEF89 /* ReadJsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005899523F5B144002CEF89 /* ReadJsonUtils.swift */; };
 		E01849F723F5B50B00B0E604 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01849F623F5B50B00B0E604 /* MockService.swift */; };
+		E01849F923F5BE5800B0E604 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01849F823F5BE5800B0E604 /* ActivityIndicator.swift */; };
+		E01849FB23F5BEDC00B0E604 /* StockCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01849FA23F5BEDC00B0E604 /* StockCellView.swift */; };
 		E02D512623F454A100055CAD /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D512523F454A100055CAD /* Environment.swift */; };
 		E02D512923F454E700055CAD /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D512823F454E700055CAD /* Keys.swift */; };
 		E02D512C23F45D4E00055CAD /* StockListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D512B23F45D4E00055CAD /* StockListViewModelTest.swift */; };
@@ -23,7 +25,6 @@
 		E0C4A4AA23F411910088C9EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C4A4A923F411910088C9EC /* Assets.xcassets */; };
 		E0C4A4AD23F411910088C9EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C4A4AC23F411910088C9EC /* Preview Assets.xcassets */; };
 		E0C4A4B023F411910088C9EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C4A4AE23F411910088C9EC /* LaunchScreen.storyboard */; };
-		E0C4A4BB23F411920088C9EC /* StockTrendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A4BA23F411920088C9EC /* StockTrendsTests.swift */; };
 		E0C4A4C623F411920088C9EC /* StockTrendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A4C523F411920088C9EC /* StockTrendsUITests.swift */; };
 		E0C4A4D723F421660088C9EC /* gainer.json in Resources */ = {isa = PBXBuildFile; fileRef = E0C4A4D623F421660088C9EC /* gainer.json */; };
 		E0C4A4D923F422550088C9EC /* losers.json in Resources */ = {isa = PBXBuildFile; fileRef = E0C4A4D823F422550088C9EC /* losers.json */; };
@@ -51,6 +52,8 @@
 /* Begin PBXFileReference section */
 		E005899523F5B144002CEF89 /* ReadJsonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJsonUtils.swift; sourceTree = "<group>"; };
 		E01849F623F5B50B00B0E604 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		E01849F823F5BE5800B0E604 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		E01849FA23F5BEDC00B0E604 /* StockCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCellView.swift; sourceTree = "<group>"; };
 		E02D512523F454A100055CAD /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		E02D512823F454E700055CAD /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		E02D512A23F455D100055CAD /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
@@ -69,7 +72,6 @@
 		E0C4A4AF23F411910088C9EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0C4A4B123F411910088C9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0C4A4B623F411920088C9EC /* Stock TrendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stock TrendsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0C4A4BA23F411920088C9EC /* StockTrendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTrendsTests.swift; sourceTree = "<group>"; };
 		E0C4A4BC23F411920088C9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0C4A4C123F411920088C9EC /* Stock TrendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stock TrendsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C4A4C523F411920088C9EC /* StockTrendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTrendsUITests.swift; sourceTree = "<group>"; };
@@ -127,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				E0C4A4A723F4118D0088C9EC /* ContentView.swift */,
+				E01849F823F5BE5800B0E604 /* ActivityIndicator.swift */,
+				E01849FA23F5BEDC00B0E604 /* StockCellView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,7 +192,6 @@
 		E0C4A4B923F411920088C9EC /* Stock TrendsTests */ = {
 			isa = PBXGroup;
 			children = (
-				E0C4A4BA23F411920088C9EC /* StockTrendsTests.swift */,
 				E0C4A4BC23F411920088C9EC /* Info.plist */,
 				E0C4A4D623F421660088C9EC /* gainer.json */,
 				E0C4A4D823F422550088C9EC /* losers.json */,
@@ -379,6 +382,8 @@
 				E083640523F44978000DCEA8 /* Service.swift in Sources */,
 				E0C4A4A623F4118D0088C9EC /* SceneDelegate.swift in Sources */,
 				E0C4A4DB23F425250088C9EC /* MostGainerList.swift in Sources */,
+				E01849FB23F5BEDC00B0E604 /* StockCellView.swift in Sources */,
+				E01849F923F5BE5800B0E604 /* ActivityIndicator.swift in Sources */,
 				E0C4A4DD23F425340088C9EC /* Stock.swift in Sources */,
 				E08363FF23F43EA8000DCEA8 /* MostLoserList.swift in Sources */,
 				E02D512923F454E700055CAD /* Keys.swift in Sources */,
@@ -391,7 +396,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0C4A4BB23F411920088C9EC /* StockTrendsTests.swift in Sources */,
 				E083640123F4422D000DCEA8 /* ReadJsonTest.swift in Sources */,
 				E005899623F5B144002CEF89 /* ReadJsonUtils.swift in Sources */,
 				E083640323F44663000DCEA8 /* ServiceTest.swift in Sources */,

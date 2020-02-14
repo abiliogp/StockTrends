@@ -26,7 +26,7 @@ class ServiceTest: XCTestCase {
             expectFetch.fulfill()
         }
 
-        wait(for: [expectFetch], timeout: 1.0)
+        wait(for: [expectFetch], timeout: 5.0)
     }
 
     func testShouldReturnMostLoser() {
@@ -44,7 +44,7 @@ class ServiceTest: XCTestCase {
             expectFetch.fulfill()
         }
 
-        wait(for: [expectFetch], timeout: 1.0)
+        wait(for: [expectFetch], timeout: 5.0)
     }
 
 }

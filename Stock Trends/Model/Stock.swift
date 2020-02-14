@@ -11,12 +11,14 @@ import Foundation
 struct Stock: Codable {
     var ticker: String
     var changes: Double
+    var price: String
     var changesPercentage: String
     var companyName: String
 
     enum CodingKeys: String, CodingKey {
         case ticker,
         changes,
+        price,
         changesPercentage,
         companyName
     }
