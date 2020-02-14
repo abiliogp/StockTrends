@@ -32,10 +32,10 @@ extension StockListViewModel {
             DispatchQueue.main.async {
                 self?.loading = false
                 switch result {
-                    case .success(let stocks):
-                        self?.listStock = stocks.mostGainerStock
-                    case .failure(let error):
-                        break
+                case .success(let stocks):
+                    self?.listStock = stocks.mostGainerStock
+                case .failure(let error):
+                    break
                 }
             }
 
@@ -45,12 +45,14 @@ extension StockListViewModel {
     func loadLosers() {
         self.loading = true
         self.service.fetchLoserList { [weak self] (result) in
-            self?.loading = false
-            switch result {
-            case .success(let stocks):
-                self?.listStock = stocks.mostLoserStock
-            case .failure(let error):
-                break
+            DispatchQueue.main.async {
+                self?.loading = false
+                switch result {
+                case .success(let stocks):
+                    self?.listStock = stocks.mostLoserStock
+                case .failure(let error):
+                    break
+                }
             }
         }
     }

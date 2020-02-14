@@ -4,6 +4,8 @@
 <dict>
 	<key>ENDPOINT_GAINERS</key>
 	<string>$(ENDPOINT_GAINERS)</string>
+	<key>IMAGE_PATH</key>
+	<string>$(IMAGE_PATH)</string>
 	<key>ENDPOINT_LOSERS</key>
 	<string>$(ENDPOINT_LOSERS)</string>
 	<key>CFBundleDevelopmentRegion</key>

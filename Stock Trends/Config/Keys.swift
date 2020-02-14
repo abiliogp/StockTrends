@@ -12,5 +12,6 @@ public struct Keys {
     struct Endpoints {
         static let gainers = "ENDPOINT_GAINERS"
         static let losers = "ENDPOINT_LOSERS"
+        static let imagePath = "IMAGE_PATH"
     }
 }

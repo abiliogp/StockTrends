@@ -32,26 +32,25 @@ struct StockCellView: View {
                     .lineLimit(1)
                     .truncationMode(.tail)
 
-            }.frame(width: 150, height: 60, alignment: .leading)
+            }.frame(width: ViewProperties.width150,
+                    height: ViewProperties.height60,
+                    alignment: .leading)
             Divider()
             VStack(alignment: .leading) {
                 ChangeView(change: change,
                            changePercentage: changesPercentage)
 
                 PriceView(price: (price as NSString).doubleValue)
-
             }
         }
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: Alignment.center)
-
-        .padding(10)
-        .background(
-            Color(UIColor(
-                red:0.76,
-                green:0.76,
-                blue:0.78,
-                alpha:1.0)))
-        .cornerRadius(4, antialiased: true)
+        .frame(minWidth: 0,
+               maxWidth: .infinity,
+               minHeight: 0,
+               maxHeight: .infinity,
+               alignment: Alignment.center)
+        .padding(ViewProperties.padding10)
+        .background(Color(ViewProperties.grayLight))
+        .cornerRadius(ViewProperties.cornerRadius, antialiased: true)
     }
 }
 
@@ -88,8 +87,8 @@ struct TextChange: View {
             .font(.subheadline)
             .foregroundColor(.secondary)
             .background(color, alignment: .leading)
-            .cornerRadius(4)
-            .padding(4)
+            .cornerRadius(ViewProperties.cornerRadius)
+            .padding(ViewProperties.padding4)
     }
 }
 
@@ -126,8 +125,8 @@ struct TextPrice: View {
             .multilineTextAlignment(.trailing)
             .foregroundColor(.secondary)
             .background(color, alignment: .center)
-            .cornerRadius(4)
-            .padding(4)
+            .cornerRadius(ViewProperties.cornerRadius)
+            .padding(ViewProperties.padding4)
     }
 }
 

@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
 @testable import Stock_Trends
 
 class MockService: ServiceProtocol {
@@ -44,5 +46,9 @@ class MockService: ServiceProtocol {
         } catch {
             completionHandler(.failure(.decodeError))
         }
+    }
+
+    func fetchImage(ticker: String, completionHandler: @escaping (Result<UIImage, ServiceError>) -> Void) {
+        completionHandler(.failure(.unavailable))
     }
 }

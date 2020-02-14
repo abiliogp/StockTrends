@@ -29,4 +29,11 @@ enum Environment {
         }
         return endpoint
     }()
+
+    static let imagePath: String = {
+        guard let endpoint = Environment.infoDictionary[Keys.Endpoints.imagePath] as? String else {
+            fatalError("API Key not set in plist for this environment")
+        }
+        return endpoint
+    }()
 }

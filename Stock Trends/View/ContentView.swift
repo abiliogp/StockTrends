@@ -14,7 +14,6 @@ struct ContentView: View {
 
     @State private var isGainer = true
 
-
     init() {
         viewModel.setupController()
         viewModel.loadGainers()
@@ -27,6 +26,19 @@ struct ContentView: View {
                     ActivityIndicator()
                 } else {
                     List {
+
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(alignment: .top,
+                                   spacing: ViewProperties.spacing) {
+                                    ForEach(viewModel.listStock) { stockItem in
+                                        HorizontalCellView(ticker: stockItem.ticker)
+                                    }
+                            }.padding(
+                                .horizontal,
+                                ViewProperties.padding)
+                        }.padding(.horizontal,
+                                  ViewProperties.paddingNegative)
+
                         ForEach(viewModel.listStock) { stockItem in
                             StockCellView(
                                 ticker: stockItem.ticker,
@@ -35,7 +47,6 @@ struct ContentView: View {
                                 change: stockItem.changes,
                                 changesPercentage:
                                 stockItem.changesPercentage)
-                            
                         }
                     }
                 }
@@ -44,22 +55,22 @@ struct ContentView: View {
             .navigationBarItems(trailing:
                 HStack {
                     Button(action: {
-                        if self.isGainer{
+                        if self.isGainer {
                             self.viewModel.loadLosers()
-                        } else{
+                        } else {
                             self.viewModel.loadGainers()
                         }
                         self.isGainer.toggle()
 
-                    }){
-                        Group{
-                            if isGainer{
+                    }, label: {
+                        Group {
+                            if isGainer {
                                 Image("arrow.down.circle.fill")
-                            } else{
+                            } else {
                                 Image("arrow.up.circle.fill")
                             }
                         }
-                    }
+                    })
                 }
             )
         }

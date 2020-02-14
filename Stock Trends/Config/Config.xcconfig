@@ -12,3 +12,5 @@
 ENDPOINT_GAINERS = https:/$()/financialmodelingprep.com/api/v3/stock/gainers
 
 ENDPOINT_LOSERS = https:/$()/financialmodelingprep.com/api/v3/stock/losers
+
+IMAGE_PATH = https:/$()/financialmodelingprep.com/stocks

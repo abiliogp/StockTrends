@@ -16,7 +16,6 @@ class ConvertDtoTest: XCTestCase {
         let jsonFileUrl = testBundle.path(forResource: "gainer", ofType: ".json")
         let data = try Data(contentsOf: jsonFileUrl)
         let gainerList = try JSONDecoder.decode()
-        
     }
 
 }
