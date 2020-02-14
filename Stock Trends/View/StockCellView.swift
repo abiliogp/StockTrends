@@ -19,7 +19,7 @@ struct StockCellView: View {
 
     var body: some View {
         HStack {
-            VStack {
+            VStack(alignment: .leading) {
                 Text("Ticker: \(ticker)")
                     .bold()
                     .font(.callout)
@@ -32,15 +32,26 @@ struct StockCellView: View {
                     .lineLimit(1)
                     .truncationMode(.tail)
 
-            }
-            VStack {
+            }.frame(width: 150, height: 60, alignment: .leading)
+            Divider()
+            VStack(alignment: .leading) {
                 ChangeView(change: change,
                            changePercentage: changesPercentage)
 
                 PriceView(price: (price as NSString).doubleValue)
 
             }
-        }.aspectRatio(contentMode: .fill)
+        }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: Alignment.center)
+
+        .padding(10)
+        .background(
+            Color(UIColor(
+                red:0.76,
+                green:0.76,
+                blue:0.78,
+                alpha:1.0)))
+        .cornerRadius(4, antialiased: true)
     }
 }
 
@@ -73,6 +84,7 @@ struct TextChange: View {
 
     var body: some View {
         Text(changePercentage)
+            .foregroundColor(Color.white)
             .font(.subheadline)
             .foregroundColor(.secondary)
             .background(color, alignment: .leading)
@@ -108,7 +120,8 @@ struct TextPrice: View {
     var color: Color
 
     var body: some View {
-        Text("Price: $ \(price, specifier: "%.2f")")
+        Text("$ \(price, specifier: "%.2f")")
+            .foregroundColor(Color.white)
             .font(.subheadline)
             .multilineTextAlignment(.trailing)
             .foregroundColor(.secondary)
@@ -137,7 +150,7 @@ struct StockCellView_Previews: PreviewProvider {
     static var previews: some View {
         StockCellView(
             ticker: "SAM",
-            companyName: "Boston Beer Company Inc. (The)",
+            companyName: "EPC Groupe",
             price: "399.69",
             change: 25.83,
             changesPercentage: "(+6.91%)")

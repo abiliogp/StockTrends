@@ -59,6 +59,7 @@
 		E02D512A23F455D100055CAD /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		E02D512B23F45D4E00055CAD /* StockListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModelTest.swift; sourceTree = "<group>"; };
 		E02D512D23F4686300055CAD /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
+		E0362C5223F6E8870053401B /* Stock Trends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Stock Trends.entitlements"; sourceTree = "<group>"; };
 		E08363FE23F43EA8000DCEA8 /* MostLoserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostLoserList.swift; sourceTree = "<group>"; };
 		E083640023F4422D000DCEA8 /* ReadJsonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJsonTest.swift; sourceTree = "<group>"; };
 		E083640223F44663000DCEA8 /* ServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTest.swift; sourceTree = "<group>"; };
@@ -166,6 +167,7 @@
 		E0C4A4A223F4118D0088C9EC /* Stock Trends */ = {
 			isa = PBXGroup;
 			children = (
+				E0362C5223F6E8870053401B /* Stock Trends.entitlements */,
 				E0C4A4A323F4118D0088C9EC /* AppDelegate.swift */,
 				E0C4A4A523F4118D0088C9EC /* SceneDelegate.swift */,
 				E0C4A4A923F411910088C9EC /* Assets.xcassets */,
@@ -560,8 +562,10 @@
 			baseConfigurationReference = E02D512A23F455D100055CAD /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "Stock Trends/Stock Trends.entitlements";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Stock Trends/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Stock Trends/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -570,6 +574,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Stock-Trends";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -580,8 +587,10 @@
 			baseConfigurationReference = E02D512A23F455D100055CAD /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "Stock Trends/Stock Trends.entitlements";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Stock Trends/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Stock Trends/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -590,6 +599,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Stock-Trends";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

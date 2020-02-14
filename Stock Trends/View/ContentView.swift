@@ -32,6 +32,7 @@ struct ContentView: View {
                                 change: stockItem.changes,
                                 changesPercentage:
                                 stockItem.changesPercentage)
+                            
                         }
                     }
                 }
@@ -41,7 +42,7 @@ struct ContentView: View {
                 HStack {
                     Button(action: {
                         self.viewModel.loadLosers()
-                    }) {
+                    }){
                          Text("Losers")
                     }
                 }
