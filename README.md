@@ -3,6 +3,7 @@
 ![Build Status](https://travis-ci.com/abiliogp/StockTrends.svg?branch=master)
 [![codecov](https://codecov.io/gh/abiliogp/StockTrends/branch/master/graph/badge.svg)](https://codecov.io/gh/abiliogp/StockTrends)
 [![codebeat badge](https://codebeat.co/badges/5cce79fc-3252-4bbe-b233-e8550aa1e7c3)](https://codebeat.co/projects/github-com-abiliogp-stocktrends-master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5a639438447d7746039b/maintainability)](https://codeclimate.com/github/abiliogp/StockTrends/maintainability)
 
 # StockTrends
 
